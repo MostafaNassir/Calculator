@@ -1,0 +1,93 @@
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    background-color: #cccbcb38;
+
+}
+.container {
+    display: grid;
+    justify-content: center;
+    align-content:center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(120px,auto) repeat(5,80px);
+    
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color:white;
+    display:flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    flex-direction: column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .currentoutput{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.output .previousoutput{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+button {
+    border: 1px solid #cacaca40;
+    background-color: white;
+    cursor:pointer;
+    outline: none;
+    font-size: large;
+    
+}
+button:hover {
+    background-color:#edebeb;
+}
+
+.operationbutton {
+    border-width: 0; 
+    background-color:#adafaf14;
+    color:#0d8cf1;
+}
+.operationbutton:hover {
+    background-color:rgb(194, 194, 194);
+}
+.del{
+    border-width: 0; 
+    background-color:#adafaf14;
+    color:#0d8cf1;
+}
+.del:hover{
+    background-color:rgb(194, 194, 194);
+}
+
+.aclear{
+    border-width: 0; 
+    background-color:#adafaf14;
+    color:#0d8cf1;
+}
+.aclear:hover{
+    background-color:rgb(194, 194, 194);
+}
+
+
+.equal{
+    grid-row: span 2;
+    background-color: #0d8cf1;
+    color:white;
+}
+.equal:hover{
+    background-color: #0e67b0;
+}
+    
+.icon{
+    text-align: center;
+    color:#0e67b0;
+    cursor: pointer;
+}
